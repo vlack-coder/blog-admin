@@ -33,7 +33,9 @@ export default function PostDetail() {
 
   useEffect(() => {
     fetchPost();
-  }, [slug]);
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slug]); 
+ 
 
   const { title, content, thumbnail } = post;
 

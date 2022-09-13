@@ -43,10 +43,10 @@ export default function NotificationProvider({ children }) {
   useEffect(() => {
     errorContainer.current?.classList.remove("bottom-14", "opacity-0");
     errorContainer.current?.classList.add("bottom-10", "opacity-1");
-    return () => {
-      errorContainer.current?.classList.add("bottom-14", "opacity-0");
-      errorContainer.current?.classList.remove("bottom-10", "opacity-1");
-    };
+    // return () => {
+    //   errorContainer.current?.classList.add("bottom-14", "opacity-0");
+    //   errorContainer.current?.classList.remove("bottom-10", "opacity-1");
+    // };
   }, [notification.value]);
 
   return (

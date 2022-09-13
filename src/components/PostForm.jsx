@@ -43,6 +43,7 @@ function PostForm({
     return () => {
       if (resetAfterSubmit) resetForm();
     };
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialPost]);
 
   const handleImageUpoad = async ({ target }) => {

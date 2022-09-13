@@ -4,7 +4,7 @@ import { useNotification } from "./NotificationProvider";
 
 const SearchContext = createContext();
 
-let timeoutId;
+// let timeoutId;
 
 export default function SearchProvider({ children }) {
   const { updateNotification } = useNotification();

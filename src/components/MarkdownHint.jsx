@@ -12,10 +12,10 @@ export default function MarkdownHint() {
   useEffect(() => {
     container.current?.classList.remove("opacity-0", "-translate-y-5");
     container.current?.classList.add("opacity-1", "translate-y-0");
-    return () => {
-      container.current?.classList.remove("opacity-1", "translate-y-0");
-      container.current?.classList.add("opacity-0", "-translate-y-5");
-    };
+    // return () => {
+    //   container.current?.classList.remove("opacity-1", "translate-y-0");
+    //   container.current?.classList.add("opacity-0", "-translate-y-5");
+    // };
   }, []);
 
   return (
@@ -40,6 +40,7 @@ export default function MarkdownHint() {
       </ul>
       <div className="text-center p-2">
         <a
+          rel="noreferrer"
           target="_blank"
           className="text-blue-500"
           href="https://www.markdownguide.org/basic-syntax"
